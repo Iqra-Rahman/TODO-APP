@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+.body{
+  background-color: black;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.editing {
+  animation: blink 2s infinite;
+  caret-color: black; /* Makes the cursor visible and blinking */
+}
